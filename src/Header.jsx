@@ -1,3 +1,5 @@
+import { Link } from "react-router";
+
 const Header = () => {
     return (
         <div>
@@ -71,6 +73,11 @@ const Header = () => {
                                                 <li><a className="dropdown-item" href="#">Element 2</a></li>
                                                 <li><a className="dropdown-item" href="#">Element 3</a></li>
                                             </ul>
+                                        </li>
+                                        <li className="nav-item dropdown">
+                                            <a className="nav-link active" href="#" id="elementsDropdown">
+                                                <Link to={"/contact"}>Contact <i class="fa-solid fa-phone"></i></Link>
+                                            </a>
                                         </li>
                                     </ul>
                                 </div>
